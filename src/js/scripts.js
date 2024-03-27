@@ -1,2 +1,11 @@
-// This file is eventually where you'll learn to write JavaScript.
-// For right now, you don't need to worry about it.
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    var button = document.getElementById("scrollButton");
+
+    button.addEventListener("click", function () {
+        document.getElementById("travelTipsSection").scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
